@@ -1,5 +1,6 @@
 # MyPustak Full Stack Developer – Coding Challenge
-
+Live link: https://mypustak-fullstack-challenge.vercel.app/
+Backend : https://mypustak-backend-v65m.onrender.com
 ## Overview
 This is a minimal **Post Management Application** built as part of the MyPustak Full Stack Developer Hiring Challenge.
 
