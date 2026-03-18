@@ -39,12 +39,19 @@ Clean and responsive UI
 ## Project Structure
 
 mypustak-challenge/
+
 ├── backend/
+
 │ └── main.py
+
 ├── frontend/
+
 │ ├── app/
+
 │ ├── lib/
+
 │ └── ...
+
 └── README.md
 
 
