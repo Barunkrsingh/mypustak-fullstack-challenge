@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MyPustak Full Stack Developer – Coding Challenge
 
-## Getting Started
+## Overview
+This is a minimal **Post Management Application** built as part of the MyPustak Full Stack Developer Hiring Challenge.
 
-First, run the development server:
+The application allows users to:
+- View posts
+- Create new posts
+- Delete posts
+
+---
+
+## 🛠 Tech Stack
+
+### Backend
+- FastAPI
+- Python
+- In-memory storage (no database)
+
+### Frontend
+- Next.js (TypeScript)
+- Tailwind CSS
+- Axios
+
+---
+
+## Features
+
+Fetch all posts  
+Create new post  
+Delete post  
+Loading state handling  
+Error handling  
+Clean and responsive UI  
+
+---
+
+## Project Structure
+
+mypustak-challenge/
+├── backend/
+│ └── main.py
+├── frontend/
+│ ├── app/
+│ ├── lib/
+│ └── ...
+└── README.md
+
+
+---
+
+##  Setup Instructions
+
+###  Backend Setup
 
 ```bash
+cd backend
+pip install fastapi uvicorn
+uvicorn main:app --reload
+Backend runs on: http://127.0.0.1:8000
+
+###  Frontend Setup
+cd frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend runs on: http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# API Endpoints
+| Method | Endpoint   | Description       |
+| ------ | ---------- | ----------------- |
+| GET    | /posts     | Get all posts     |
+| POST   | /posts     | Create a new post |
+| DELETE | /posts/:id | Delete a post     |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Implementation Details
 
-## Learn More
+Used in-memory array to store posts as per requirement
 
-To learn more about Next.js, take a look at the following resources:
+Implemented RESTful API using FastAPI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Connected frontend with backend using Axios
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Managed state using React hooks
 
-## Deploy on Vercel
+Handled hydration issue in Next.js for stable rendering
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Add database (MongoDB / PostgreSQL)
+
+Implement authentication (JWT)
+
+Add edit/update feature
+
+Pagination for large data
+
+Improve UI/UX with animations
+
+# Submission 
+
+GitHub Repository: https://github.com/barunkrsingh/mypustak-fullstack-challenge
+
